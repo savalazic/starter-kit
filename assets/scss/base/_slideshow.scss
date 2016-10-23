@@ -1,0 +1,32 @@
+/*
+ * Slideshow styles
+*/
+
+.multiple-items {
+  margin-top: 100px;
+}
+
+.slick-slide {
+  outline: none;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+/*
+ * Dots and arrows styles
+*/
+
+.slick-dots {
+  bottom: -50px;
+
+  li {
+    button {
+      &::before {
+        font-size: 30px;
+      }
+
+    }
+  }
+}
