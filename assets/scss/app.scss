@@ -1,7 +1,7 @@
-// Modules and variables
-@import 'partial/partial';
+@import 'utils/utils';
 @import 'base/base';
-@import 'module/module';
-
-// Page layout
+@import 'components/components';
 @import 'layout/layout';
+@import 'pages/pages';
+@import 'vendors/vendors';
+@import 'themes/theme';
