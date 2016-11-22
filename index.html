@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="public/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,500" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -69,35 +69,28 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam a magnam sequi recusandae quos! Dolorem inventore quae, incidunt eius amet sint pariatur maiores magni repudiandae aspernatur, id soluta odio architecto.
         </blockquote>
 
-        <div class="multiple-items slideshow">
-          <div class="slideshow__item">
-            <img class="slideshow__img" src="https://placem.at/people?w=300&h=200&txt=&random=some_seed" alt="" />
-            <p class="slideshow__text">Picture 1</p>
+        <div class="multipleItems slideshow">
+          <div class="slideshowItem">
+            <img class="slideshowItemImg" src="https://placem.at/people?w=300&h=200&txt=&random=some_seed" alt="" />
+            <p class="slideshowItemText">Picture 1</p>
           </div>
-          <div class="slideshow__item">
-            <img class="slideshow__img" src="https://placem.at/places?w=300&h=200&txt=&random=some_seed" alt="" />
-            <p class="slideshow__text">Picture 2</p>
+          <div class="slideshowItem">
+            <img class="slideshowItemImg" src="https://placem.at/places?w=300&h=200&txt=&random=some_seed" alt="" />
+            <p class="slideshowItemText">Picture 2</p>
           </div>
-          <div class="slideshow__item">
-            <img class="slideshow__img" src="https://placem.at/things?w=300&h=200&txt=&random=some_seed" alt="" />
-            <p class="slideshow__text">Picture 3</p>
+          <div class="slideshowItem">
+            <img class="slideshowItemImg" src="https://placem.at/things?w=300&h=200&txt=&random=some_seed" alt="" />
+            <p class="slideshowItemText">Picture 3</p>
           </div>
-          <div class="slideshow__item">
-            <img class="slideshow__img" src="https://placem.at/places?w=300&h=200&txt=&random=some_seed" alt="" />
-            <p class="slideshow__text">Picture 4</p>
+          <div class="slideshowItem">
+            <img class="slideshowItemImg" src="https://placem.at/places?w=300&h=200&txt=&random=some_seed" alt="" />
+            <p class="slideshowItemText">Picture 4</p>
           </div>
         </div>
       </div> <!-- end of row -->
     </div> <!-- end of container -->
   </section> <!-- end of about -->
 
-
-  <!-- first try to load from cdn -->
-  <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
-  <!-- if cdn fails, load local jquery -->
-  <script>window.jQuery || document.write('<script src="assets/js/jquery.js"><\/script>')</script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="public/js/bundle.js"></script>
 </body>
 </html>

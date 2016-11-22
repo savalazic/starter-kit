@@ -1,15 +1,6 @@
 $(function(){
 
-  $('.navbar-toggle').blur(function(event){
-    var screenWidth = window.innerWidth;
-
-    if (screenWidth < 768) {
-      $('#navbar-collapse').collapse('hide');
-    }
-    
-  });
-
-  $('.multiple-items').slick({
+  $('.multipleItems').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
