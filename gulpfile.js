@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var minify = require('gulp-minify');
 var browserSync = require('browser-sync').create();
-//Settings for autoprefixer
+
 var autoprefixerOptions = {
   browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 };
@@ -20,7 +20,6 @@ gulp.task('pack-js', function () {
     }))
     .pipe(gulp.dest('public/js'));
 });
-
 
 gulp.task('sass', function () {
   return gulp.src('src/scss/**/*.scss')
@@ -45,7 +44,7 @@ gulp.task('php-sync', function() {
 gulp.task('watch', function () {
   gulp.watch('src/js/*.js', ['pack-js']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
-  gulp.watch('./*.php').on('change', browserSync.reload); // change .php when using php
+  gulp.watch('./*.html').on('change', browserSync.reload); // change .php when using php
 });
 
-gulp.task('default', ['pack-js', 'sass', 'php-sync', 'watch']); // change sync to php-sync when using php
+gulp.task('default', ['pack-js', 'sass', 'sync', 'watch']); // change sync to php-sync when using php
