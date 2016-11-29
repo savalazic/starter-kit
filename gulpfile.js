@@ -29,16 +29,23 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('public/css/'))
     .pipe(browserSync.stream());
 });
-gulp.task('serve', function() {
+
+gulp.task('sync', function() {
     browserSync.init({
         server: "./"
     });
 });
 
+gulp.task('php-sync', function() {
+  browserSync.init({
+    proxy: "http://localhost/"
+  });
+});
+
 gulp.task('watch', function () {
   gulp.watch('src/js/*.js', ['pack-js']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
-  gulp.watch('./*.html').on('change', browserSync.reload);
+  gulp.watch('./*.html').on('change', browserSync.reload); // change .php when using php
 });
 
-gulp.task('default', ['pack-js', 'sass', 'watch', 'serve']);
+gulp.task('default', ['pack-js', 'sass', 'sync', 'watch']); // change sync to php-sync when using php
